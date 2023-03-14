@@ -18,10 +18,10 @@
         <a href="" class="logo">Ahoty</a>
         <div class="my_navlinks">
             <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li class="active"><a href="portfolio.php">Portfolio</a></li>
-                <li><a href="about.php">À propos</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li class="theme">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                         class="bi bi-moon" viewBox="0 0 16 16">
@@ -49,24 +49,7 @@
                 </div>
 
                 <div class="filter-mode">
-                    <a href="?filter=<?php if (isset($_GET['filter']) && !empty($_GET['filter'])) {
-                                            if ($_GET['filter'] === "grid") {
-                                                echo "list";
-                                            } else {
-                                                echo "grid";
-                                            }
-                                        } else {
-                                            echo "list";
-                                        } ?>" class="btn btn-outline-secondary mt-4 filter-mode">
-                        <?php if (isset($_GET['filter']) && !empty($_GET['filter'])) {
-                            if ($_GET['filter'] === "grid") {
-                                echo "Mode liste";
-                            } else {
-                                echo "Mode Grille";
-                            }
-                        } else {
-                            echo "Mode Liste";
-                        } ?>
+                    <a href="?filter=list">Mode Liste
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
                             <path
@@ -75,15 +58,7 @@
                     </a>
                 </div>
 
-                <div class="<?php if (isset($_GET['filter']) && !empty($_GET['filter'])) {
-                                if ($_GET['filter'] === "grid") {
-                                    echo "frame-project";
-                                } else {
-                                    echo "frame-line";
-                                }
-                            } else {
-                                echo "frame-project";
-                            } ?>">
+                <div class="frame-project">
                     <a href="" class="project">
                         <div class="project-content">
                             <div class="project-info">
@@ -243,7 +218,7 @@
                 </div>
                 <div class="newsletter">
                     <span>Subscribe to my Newsletter</span>
-                    <form method="POST" action="#">
+                    <form method="POST" action="">
                         <input type="text" class="form-control" placeholder="Entrer votre email ici*" name="email">
                         <button type="submit" class="btn">Rejoindre</button>
                     </form>
@@ -263,6 +238,6 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<!--</body>-->
+</body>
 
 </html>

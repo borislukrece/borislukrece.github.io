@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>À propos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
@@ -18,10 +18,10 @@
         <a href="" class="logo">Ahoty</a>
         <div class="my_navlinks">
             <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="portfolio.php">Portfolio</a></li>
-                <li><a href="about.php">À propos</a></li>
-                <li class="active"><a href="contact.php">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li class="theme">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                         class="bi bi-moon" viewBox="0 0 16 16">
@@ -39,28 +39,27 @@
         </div>
     </nav>
 
-    <section class="my-container-contact">
-        <div class="my-content-contact">
-            <div class="frame-contact">
-                <form method="POST" action="server/contact.php" class="formContact">
-                    <span class="form-contact-title">Laissez un message ici</span>
+    <section class="my-container-about">
+        <div class="my-content-about">
+            <div class="frame-about">
+                <div class="frame-content-about">
+                    <div class="frame-content-about-text">
+                        <span>About</span>
+                        <p>
+                            Je suis un développeur web passionné par la création de sites web créatifs et efficaces. Mon
+                            objectif est de fournir des solutions en ligne de qualité supérieure qui répondent aux
+                            besoins de mes clients et de leurs utilisateurs. <br> <br>
 
-                    <div class="form-contact-input">
-                        <div class="nom-email">
-                            <input type="text" name="full_name" placeholder="Nom Complet">
-                            <input type="text" name="email" placeholder="Email*">
-                        </div>
-                        <div class="subject">
-                            <input type="subject" name="subject" placeholder="Sujet">
-                        </div>
-                        <div class="message">
-                            <textarea name="message" id="message" placeholder="Votre Message"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-light">Soumettre</button>
-                        </div>
+                            Je suis fier de mon travail et j'ai hâte de travailler avec vous pour créer quelque chose de
+                            spécial. Consultez mes projets pour voir quelques exemples de mon travail et n'hésitez pas à
+                            me contacter si vous avez des questions ou si vous souhaitez discuter de votre projet.
+                        </p>
                     </div>
-                </form>
+                </div>
+
+                <div class="frame-picture">
+                    <img src="img/ahoty.jpg" alt="Ma photo">
+                </div>
             </div>
         </div>
     </section>
