@@ -1,0 +1,296 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.10);
+}
+
+.frame_action {
+  width: 100%;
+  height: 20vh;
+  background: rgba(0, 0, 0, 0.11);
+  background-image: url('/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#frame_action {
+  position: relative;
+}
+
+#frame_action.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.container_search{
+  width: 55%;
+  height: auto;
+}
+
+.input_search{
+  display: flex;
+}
+
+.input_search input{
+  width: 80%;
+  height: 5vh;
+  background: white;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.btn_search{
+  width: 20%;
+  height: 5vh;
+  border-radius: 0px 4px 4px 0px;
+  overflow: hidden;
+}
+
+.btn_search button{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #545050;
+}
+
+.tendance_search{
+  color: white;
+  font-size: 0.8rem;
+}
+
+.content_home{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.section_title{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.list_book{
+  width: 100%;
+  min-height: 38vh;
+  display: flex;
+  justify-content: center;
+}
+
+.grid_book{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.book{
+  width: 20vw;
+  height: 48vh;
+  background: rgba(65, 65, 65, 0.81);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+  border-radius: 18px;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.couverture{
+  height: 60%;
+  background: rgba(255, 255, 255, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.couverture img{
+  width: auto;
+  height: 100%;
+}
+
+.informations{
+  height: 40%;
+  padding: 10px;
+}
+
+.book_title{
+  color: white;
+  font-weight: 600;
+}
+
+.book_category{
+  color: white;
+}
+
+.book_created_date{
+  color: gray;
+}
+
+.book_evaluation{
+  color: white;
+}
+
+.pagination{
+  width: 100%;
+  height: 9vh;
+  background: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page{
+  width: 100%;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.btn_back{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  border: solid 1px rgba(35,55,70,0.88);
+  margin-right: 1rem;
+}
+
+.btn_next{
+  padding: 10px;
+  background: rgba(35,55,70,0.88);
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+@media screen and (min-width: 1300px) {
+  .frame_action {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .container_search{
+    width: 35%;
+    height: auto;
+  }
+
+  .input_search input{
+    width: 80%;
+    height: 6vh;
+  }
+
+  .btn_search{
+    width: 20%;
+    height: 6vh;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container_search{
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 368px){
+  .input_search input{
+    font-size: 0.8rem;
+  }
+
+  .tendance_search{
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .pagination{
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn{
+    width: 100%;
+    position: relative;
+  }
+  
+  .page{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1160px){
+  .grid_book{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+  }
+
+  .book{
+    width: 28vw;
+    height: 48vh;
+  }
+}
+
+@media screen and (max-width: 940px){
+  .grid_book{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+  }
+
+  .book{
+    width: 42vw;
+    height: 48vh;
+  }
+}
+
+@media screen and (max-width: 760px){
+  .grid_book{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+  }
+
+  .book{
+    width: 85vw;
+    height: 48vh;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .book{
+    width: 75vw;
+    height: 48vh;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .book{
+    width: 80vw;
+    height: 48vh;
+  }
+}
